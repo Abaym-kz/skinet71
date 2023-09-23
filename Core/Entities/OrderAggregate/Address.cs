@@ -7,14 +7,14 @@ namespace Core.Entities.OrderAggregate
         }
 
         public Address(string firstName, string lastName, string street, string city, 
-            string state, string zipCode) 
+            string state, string zipcode) 
         {
             FirstName = firstName;
             LastName = lastName;
             Street = street;
             City = city;
             State = state;
-            ZipCode = zipCode;
+            ZipCode = zipcode;
         }
 
         public string FirstName { get; set; } 

@@ -15,7 +15,6 @@ import { OrderDetailedComponent } from './order-detailed/order-detailed.componen
 @NgModule({
     declarations: [
         AppComponent,
-        OrderDetailedComponent,
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

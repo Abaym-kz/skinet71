@@ -20,7 +20,7 @@ export class OrderDetailedComponent implements OnInit {
     id && this.orderService.getOrderDetailed(+id).subscribe({
       next: order => {
         this.order = order;
-        this.bcService.set('@orderDetailed', `Order# ${order.id} - ${order.status}`);
+        this.bcService.set('@OrderDetailed', `Order# ${order.id} - ${order.status}`);
       }
     })
   }

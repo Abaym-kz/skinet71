@@ -25,7 +25,7 @@ const routes: Routes = [
     data: {breadcrumb: 'Orders'},
   },
   {path: 'account', loadChildren: () => import('./account/account.module').then(m => m.AccountModule)},
-  {path: '**', redirectTo: '', pathMatch: 'full'},
+  {path: '**', redirectTo: 'not-found', pathMatch: 'full'},
 
 ];
 
